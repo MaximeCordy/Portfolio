@@ -1,0 +1,15 @@
+.header {
+  color: #000000;
+  font-family: Montserrat;
+  font-size: 25px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+.header-nav {
+  display: flex;
+  align-items: flex-end;
+  gap: 49px;
+}
