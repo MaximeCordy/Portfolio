@@ -10,6 +10,8 @@ a {
 
 body {
   font-family: "Inter", sans-serif;
+  background-color: black;
+  color: white;
 }
 
 img,
@@ -25,6 +27,6 @@ video {
 .row > [class^="col-"] {
   padding-top: 12px;
   padding-bottom: 12px;
-  background-color: rgba(86, 61, 124, 0.15);
-  border: 1px solid rgba(86, 61, 124, 0.2);
+  background-color: rgba(230, 224, 238, 0.15);
+  border: 1px solid rgba(238, 238, 238, 0.2);
 }

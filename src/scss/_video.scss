@@ -1,0 +1,32 @@
+.video-work-tags {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.video-work-tag {
+  display: flex;
+  height: 39px;
+  padding: 10px 10px 11px 10px;
+  gap: 10px;
+  border-radius: 11px;
+  border: 1px solid #898989;
+  color: #898989;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.video-work-title {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.video-work-chapeau {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
