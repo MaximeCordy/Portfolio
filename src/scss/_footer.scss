@@ -1,0 +1,65 @@
+.footer-contact {
+  display: flex;
+  align-items: center;
+  gap: 75px;
+}
+
+.footer-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: -18px;
+  align-self: stretch;
+}
+
+.footer-titre h2 {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 100px;
+  font-weight: 400;
+}
+
+.footer-titre h2 span {
+  color: #fff;
+  font-family: "Island Moments";
+  font-size: 133px;
+  font-weight: 400;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: -15px;
+  flex-shrink: 0;
+}
+
+.footer-contact a {
+  text-decoration: none;
+}
+
+.footer-logo-star {
+  position: absolute;
+  margin-left: 48%;
+  margin-top: -11%;
+}
+
+.footer-logo {
+  scale: 0.8;
+  margin-left: 23%;
+  margin-top: 3%;
+}
+
+.star {
+  animation: rotation 4s infinite ease-in-out 1s;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
