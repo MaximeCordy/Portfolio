@@ -13,3 +13,38 @@
   align-items: flex-end;
   gap: 49px;
 }
+/*
+.header-marquee-container {
+  color: #fff;
+  font-family: Inter;
+  font-size: 130px;
+  font-weight: 400;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+}
+*/
+
+.header-marquee-container {
+  width: 100vw; /* Largeur du conteneur */
+  overflow: hidden; /* Masque les textes qui sortent */
+  white-space: nowrap; /* Empêche le retour à la ligne */
+  position: relative; /* Conteneur pour position absolute */
+  padding: 20px 0;
+}
+
+.header-marquee {
+  display: flex; /* Aligne les éléments sur une ligne */
+  position: absolute; /* Permet le déplacement fluide */
+  top: 50%;
+  transform: translateY(-50%); /* Centre verticalement */
+}
+
+.header-marquee span {
+  font-size: 130px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: white;
+  font-family: Inter, sans-serif;
+  padding-right: 50px; /* Espacement entre les textes */
+}
