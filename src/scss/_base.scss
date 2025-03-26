@@ -35,3 +35,28 @@ video {
 *a {
   text-decoration: none;
 }
+
+@keyframes anim {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+// .star-video {
+//   scale: 20%;
+//   position: absolute;
+//   margin-left: 30%;
+//   margin-top: -10%;
+// }
+
+.SVG-Video {
+  font-size: 130%;
+  scale: 0.8;
+  text {
+    fill: white;
+  }
+  animation: anim 5s linear infinite;
+}
