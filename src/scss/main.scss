@@ -6,3 +6,18 @@
 @import "header";
 @import "video";
 @import "footer";
+
+.videoo {
+  color: white;
+  display: none;
+}
+.videoo.is-active {
+  color: red;
+  width: 70%;
+  flex-shrink: 0;
+  display: contents;
+}
+
+.trigger {
+  cursor: pointer;
+}

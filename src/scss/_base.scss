@@ -17,6 +17,7 @@ body {
 img,
 video {
   display: block;
+  max-width: 100%;
 }
 
 .row + .row {
@@ -29,4 +30,8 @@ video {
   padding-bottom: 12px;
   background-color: rgba(230, 224, 238, 0.15);
   border: 1px solid rgba(238, 238, 238, 0.2);
+}
+
+*a {
+  text-decoration: none;
 }

@@ -13,38 +13,88 @@
   align-items: flex-end;
   gap: 49px;
 }
-/*
-.header-marquee-container {
-  color: #fff;
-  font-family: Inter;
-  font-size: 130px;
-  font-weight: 400;
-  text-transform: uppercase;
-  white-space: nowrap;
-  overflow: hidden;
+.container-fluid {
+  margin-top: 1%;
 }
-*/
-
-.header-marquee-container {
-  width: 100vw; /* Largeur du conteneur */
-  overflow: hidden; /* Masque les textes qui sortent */
-  white-space: nowrap; /* Empêche le retour à la ligne */
-  position: relative; /* Conteneur pour position absolute */
-  padding: 20px 0;
-}
-
 .header-marquee {
-  display: flex; /* Aligne les éléments sur une ligne */
-  position: absolute; /* Permet le déplacement fluide */
-  top: 50%;
-  transform: translateY(-50%); /* Centre verticalement */
-}
-
-.header-marquee span {
   font-size: 130px;
   font-weight: 400;
   text-transform: uppercase;
   color: white;
   font-family: Inter, sans-serif;
-  padding-right: 50px; /* Espacement entre les textes */
+  white-space: nowrap;
+  overflow: hidden;
+  display: flex;
+}
+
+.header-marquee span {
+  animation: marquee 8s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1, -1);
+}
+
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.black {
+  background-color: black;
+}
+
+.header-content h2 {
+  color: #fff;
+  font-family: Inter;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.header-content span {
+  color: #fff;
+  font-family: "Island Moments";
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.header-content {
+  display: flex;
+  width: 1165px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: -23px;
+  position: relative;
+  margin-top: 15%;
+  margin-bottom: 17%;
+  margin-left: 10%;
 }
