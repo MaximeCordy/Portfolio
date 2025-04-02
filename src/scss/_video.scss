@@ -1,13 +1,15 @@
 .video-work-tags {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  margin-top: 3%;
+  margin-bottom: 10%;
+  margin-left: 2%;
 }
 .video-work-tag {
-  display: flex;
-  height: 39px;
-  padding: 10px 10px 11px 10px;
-  gap: 10px;
+  padding: 7px 12px 7px 12px;
   border-radius: 11px;
   border: 1px solid #898989;
   color: #898989;
@@ -29,4 +31,90 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  margin-bottom: 1%;
+}
+
+.Video_Space {
+  margin-bottom: 8%;
+}
+
+.container_video_border {
+  border-radius: 11px;
+  border: 1px solid #fff;
+  position: relative;
+}
+
+.trigger,
+.video-work-tag {
+  margin-left: 2%;
+}
+
+.header_video_content span {
+  color: #fff;
+  font-family: "Island Moments";
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.header_video_content h2 {
+  color: #fff;
+  font-family: Inter;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.header_video_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 13%;
+}
+
+.cadrage_video {
+  scale: 0.98;
+  margin-top: 8%;
+}
+
+.titre_video {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--white, #fff);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 5%;
+  margin-left: -4%;
+}
+
+.space_video_text {
+  margin-top: -7%;
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 20%;
+  margin-right: -5%;
+}
+
+#mouse {
+  position: absolute;
+  pointer-events: none;
+  top: 40%;
+  left: 40%;
+  width: 40px;
+  height: 40px;
+  background-color: none;
+  border-radius: 50%;
+  border: 2px solid whitesmoke;
+  transform: translate(-50%, -50%);
+}
+html {
+  cursor: none;
 }

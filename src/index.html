@@ -1,32 +1,19 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>eikon parcel starter</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="scss/main.scss" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-      rel="preconnect"
-      href="https://fonts.googleapis.com"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <title>eikon parcel starter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="scss/main.scss" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Island+Moments&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
   <extends src="header.html"></extends>
-
+  <div id="mouse"></div>
   <div class="video-container">
     <video autoplay loop muted playsinline>
       <source src="video/vrais_brume.mp4" type="video/mp4" />
@@ -47,10 +34,11 @@
         <span>welcome to Maxime’s portfolio </span>
       </div>
     </div>
-
-    <hr
-      style="width: 95%; border: 0.5px solid rgb(255, 255, 255); margin: auto"
-    />
+    <div class="line">
+      <hr
+        style="width: 95%; border: 0.5px solid rgb(255, 255, 255); margin: auto"
+      />
+    </div>
     <div class="container">
       <div class="row">
         <div class="col-12 col-lg-2">ABOUT ME</div>
@@ -58,40 +46,49 @@
           I love to work in groupe, bringing ideas to life through design,
           animation, and interactive experiences.
         </div>
+
         <div class="col-12 col-lg-4">
-          I'm Maxime Cordy, a 23-year-old Interactive Media Designer with a deep
-          passion for creativity and innovation.
+          <div class="aboutme-space">
+            I'm Maxime Cordy, a 23-year-old Interactive Media Designer with a
+            deep passion for creativity and innovation.
+          </div>
         </div>
 
         <div class="col-lg-4 offset-8">
           For me, creativity is all about pushing boundaries and crafting
           unique, engaging visuals that leave a lasting impression. Whether it's
           digital design, motion graphics, poster or videos, I thrive on turning
-          concepts into reality. Welcome to my world! 🚀
+          concepts into reality. Welcome to my world!
         </div>
-        <div class="col-lg-4">img</div>
+        <div class="col-lg-4">
+          <div class="profile"><img src="img/profile.png" alt="profile" /></div>
+        </div>
       </div>
     </div>
-    <hr
-      style="width: 95%; border: 0.5px solid rgb(255, 255, 255); margin: auto"
-    />
+    <div class="line">
+      <hr
+        style="width: 95%; border: 0.5px solid rgb(255, 255, 255); margin: auto"
+      />
+    </div>
     <div class="container">
       <div class="row">
         <div class="col-12 col-lg-3">VIDEO</div>
         <div class="col-12 col-lg-6 offset-3">
-          Here is a selection of videos created by me or as part of a group
-          project. Most of the work was done in a school setting. Enjoy! 👽
+          <div class="video_space">
+            Here is a selection of videos created by me or as part of a group
+            project. Most of the work was done in a school setting. Enjoy! 👽
+          </div>
         </div>
       </div>
     </div>
     <div class="container">
-      <class class="row">
+      <div class="row">
         <div class="col-lg-9">
           <div>
             <div class="videoo is-active">
               <a href="video.html"
                 ><video id="mainVideo" autoplay muted loop>
-                  <source src="video/testtest.mp4" type="video/mp4" />
+                  <source src="video/vit_Showreel.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video></a
               >
@@ -99,7 +96,7 @@
             <div class="videoo">
               <a href="video.html">
                 <video id="mainVideo" autoplay muted loop>
-                  <source src="video/testtest.mp4" type="video/mp4" />
+                  <source src="video/muai_Showreel.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video></a
               >
@@ -107,7 +104,7 @@
             <div class="videoo">
               <a href="video.html">
                 <video id="mainVideo" autoplay muted loop>
-                  <source src="video/testtest.mp4" type="video/mp4" />
+                  <source src="video/Jaguar_Showreel.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video></a
               >
@@ -115,133 +112,243 @@
             <div class="videoo">
               <a href="video.html">
                 <video id="mainVideo" autoplay muted loop>
-                  <source src="video/testtest.mp4" type="video/mp4" />
+                  <source src="video/motion.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video></a
               >
             </div>
           </div>
         </div>
-        <!-- <div class="star-video">
-          <img src="img/Sans titre-4.png" alt="star" />
-        </div> -->
+
         <div class="col-12 col-lg-3">
-          <div class="SVG-Video">
-            <svg viewBox="0 0 200 200">
-              <path
-                id="path"
-                d="M167 100C167 137.003 137.003 167 100 167C62.9969 167 33 137.003 33 100C33 62.9969 62.9969 33 100 33C137.003 33 166 63.5 167 100Z"
-                fill="none"
-              />
-              <text>
-                <textPath xlink:href="#path">
-                  VIDEO - VIDEO - VIDEO - VIDEO - VIDEO -
-                </textPath>
-              </text>
-            </svg>
-          </div>
-          <div class="trigger">
-            <div class="video-work-chapeau">Latest Work:</div>
-            <h2 class="video-work-title">
-              A fictional ad for the brand Vitamin Well.
-            </h2>
-          </div>
-          <div class="video-work-tags">
-            <a href="video.html"
-              ><div class="video-work-tag">VIDEO</div>
-              <div class="video-work-tag">2025</div></a
-            >
-          </div>
-          <div class="trigger">
-            <div class="video-work-chapeau">Great Work:</div>
-            <h2 class="video-work-title">A Documentary about Muai thaï.</h2>
-          </div>
-          <div class="video-work-tags">
-            <a href="video.html">
-              <div class="video-work-tag">VIDEO</div>
-              <div class="video-work-tag">2025</div></a
-            >
-          </div>
+          <div class="container_video_border">
+            <div class="SVG-Video">
+              <svg viewBox="0 0 200 200">
+                <path
+                  id="path"
+                  d="M167 100C167 137.003 137.003 167 100 167C62.9969 167 33 137.003 33 100C33 62.9969 62.9969 33 100 33C137.003 33 166 63.5 167 100Z"
+                  fill="none"
+                />
+                <text>
+                  <textPath xlink:href="#path">
+                    VIDEO - VIDEO - VIDEO - VIDEO - VIDEO -
+                  </textPath>
+                </text>
+              </svg>
+            </div>
+            <div class="trigger">
+              <div class="video-work-chapeau">Latest Work:</div>
+              <h2 class="video-work-title">
+                A fictional ad for the brand Vitamin Well.
+              </h2>
+            </div>
+            <div class="video-work-tags">
+              <a href="video.html"><div class="video-work-tag">VIDEO</div></a>
+              <a href="video.html"><div class="video-work-tag">2025</div></a>
+            </div>
+            <div class="trigger">
+              <div class="video-work-chapeau">Great Work:</div>
+              <h2 class="video-work-title">A Documentary about Muai thaï.</h2>
+            </div>
+            <div class="video-work-tags">
+              <a href="video.html"><div class="video-work-tag">VIDEO</div></a>
+              <a href="video.html"><div class="video-work-tag">2025</div></a>
+            </div>
 
-          <div class="trigger">
-            <div class="video-work-chapeau">Creative Work:</div>
-            <h2 class="video-work-title">A fictional ad for JAGUAR.</h2>
-          </div>
+            <div class="trigger">
+              <div class="video-work-chapeau">Creative Work:</div>
+              <h2 class="video-work-title">A fictional ad for JAGUAR.</h2>
+            </div>
 
-          <div class="video-work-tags">
-            <a href="video.html">
-              <div class="video-work-tag">VIDEO</div>
-              <div class="video-work-tag">2024</div></a
-            >
-          </div>
-          <div class="trigger">
-            <div class="video-work-chapeau">Motion Work:</div>
-            <h2 class="video-work-title">
-              A fictional project for the Fondation Beyeler.
-            </h2>
-          </div>
-          <div class="video-work-tags">
-            <a href="video.html">
-              <div class="video-work-tag">VIDEO</div>
-              <div class="video-work-tag">2024</div></a
-            >
+            <div class="video-work-tags">
+              <a href="video.html"><div class="video-work-tag">VIDEO</div></a>
+              <a href="video.html"><div class="video-work-tag">2024</div></a>
+            </div>
+            <div class="trigger">
+              <div class="video-work-chapeau">Motion Work:</div>
+              <h2 class="video-work-title">
+                A fictional project for the Fondation Beyeler.
+              </h2>
+            </div>
+            <div class="video-work-tags">
+              <a href="video.html"><div class="video-work-tag">VIDEO</div></a>
+              <a href="video.html"><div class="video-work-tag">2024</div></a>
+            </div>
           </div>
         </div>
-        <div class="row"></div>
-
-        <hr
-          style="
-            width: 95%;
-            border: 0.5px solid rgb(255, 255, 255);
-            margin: auto;
-          " />
+        <div class="line">
+          <hr
+            style="
+              width: 95%;
+              border: 0.5px solid rgb(255, 255, 255);
+              margin: auto;
+              margin-top: 10%;
+            "
+          />
+        </div>
         <div class="container">
           <div class="row">
             <div class="col-12 col-lg-3">PHOTOGRAPHY</div>
             <div class="col-12 col-lg-6 offset-3">
-              Photography is very important to me. I think it's a great way to
-              express oneself and make people feel something when they take the
-              time to look, not just see.
+              <div class="photo-space">
+                Photography is very important to me. I think it's a great way to
+                express oneself and make people feel something when they take
+                the time to look, not just see.
+              </div>
             </div>
           </div>
         </div>
         <div class="container">
-          <div class="row">
-            <div class="col-12 col-lg-4">img</div>
-            <div class="col-12 col-lg-4">img</div>
-            <div class="col-12 col-lg-4">img</div>
-            <div class="col-12 col-lg-4">img</div>
-            <div class="col-12 col-lg-4">img</div>
-            <div class="col-12 col-lg-4">img</div>
+          <div class="images">
+            <div class="row">
+              <div class="col-12 col-lg-4">
+                <a href="photography.html">
+                  <div class="image-wrapper">
+                    <img src="img/croatie1.png" alt="imgcroatie" />
+                    <img
+                      src="img/croatie1_color.png"
+                      alt="Couleur"
+                      class="hover-img"
+                    /></div
+                ></a>
+              </div>
+              <div class="col-12 col-lg-4">
+                <a href="photography.html">
+                  <div class="image-wrapper">
+                    <img src="img/croatie2.png" alt="imgcroatie" />
+                    <img
+                      src="img/croatie2_color.png"
+                      alt="Couleur"
+                      class="hover-img"
+                    /></div
+                ></a>
+              </div>
+              <div class="col-12 col-lg-4">
+                <a href="photography.html">
+                  <div class="image-wrapper">
+                    <img src="img/croatie3.png" alt="imgcroatie" />
+                    <img
+                      src="img/croatie3_color.png"
+                      alt="Couleur"
+                      class="hover-img"
+                    /></div
+                ></a>
+              </div>
+              <div class="col-12 col-lg-4">
+                <a href="photography.html">
+                  <div class="image-wrapper">
+                    <img src="img/croatie4.png" alt="imgcroatie" />
+                    <img
+                      src="img/croatie4_color.png"
+                      alt="Couleur"
+                      class="hover-img"
+                    /></div
+                ></a>
+              </div>
+              <div class="col-12 col-lg-4">
+                <a href="photography.html">
+                  <div class="image-wrapper">
+                    <img src="img/croatie5.png" alt="imgcroatie" />
+                    <img
+                      src="img/croatie5_color.png"
+                      alt="Couleur"
+                      class="hover-img"
+                    /></div
+                ></a>
+              </div>
+              <div class="col-12 col-lg-4">
+                <a href="photography.html">
+                  <div class="image-wrapper">
+                    <img src="img/croatie6.png" alt="imgcroatie" />
+                    <img
+                      src="img/croatie6_color.png"
+                      alt="Couleur"
+                      class="hover-img"
+                    /></div
+                ></a>
+              </div>
+            </div>
           </div>
         </div>
         <div class="container">
           <div class="row">
             <div class="col-12 col-lg-5">
-              All of these photos are on my creative Instagram page. Go check it
-              out: @Xouime 😊
+              <div class="text_image">
+                All of these photos are on my creative Instagram page. Go check
+                it out: @Xouime 😊
+              </div>
+            </div>
+            <div class="classe_etoile">
+              <div class="etoile1">
+                <img src="img/etoile 4.png" alt="etoile" />
+              </div>
+              <div class="etoile3">
+                <img src="img/etoile 6.png" alt="etoile" />
+              </div>
+              <div class="etoile2">
+                <img src="img/etoile 5.png" alt="etoile" />
+              </div>
             </div>
           </div>
         </div>
-        <hr
-          style="
-            width: 95%;
-            border: 0.5px solid rgb(255, 255, 255);
-            margin: auto;
-          " />
+        <div class="line">
+          <hr
+            style="
+              width: 95%;
+              border: 0.5px solid rgb(255, 255, 255);
+              margin: auto;
+              margin-top: 10%;
+            "
+          />
+        </div>
         <div class="container">
           <div class="row">
             <div class="col-12 col-lg-3">POSTER</div>
             <div class="col-12 col-lg-6 offset-3">
-              I love making posters! I've created some for festivals and
-              informational purposes. In my free time, I also design posters for
-              my friends, often centered around hobbies or games.
+              <div class="poster-space">
+                I love making posters! I've created some for festivals and
+                informational purposes. In my free time, I also design posters
+                for my friends, often centered around hobbies or games.
+              </div>
             </div>
           </div>
         </div>
-        <extends src="footer.html"></extends
-      ></class>
-      <script src="js/main.js" type="module"></script>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="poster.html">
+                <img src="img/posterjuv.png" alt="poster" />
+
+                <img src="img/Frame 13.png" alt="Couleur" class="hover-img" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="poster.html">
+                <img src="img/posterlangue.png" alt="poster" />
+
+                <img src="img/Frame 14.png" alt="Couleur" class="hover-img" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="poster.html">
+                <img src="img/postereikon1.png" alt="poster" />
+                <img src="img/Frame 15.png" alt="Couleur" class="hover-img" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="poster.html">
+                <img src="img/posterjuv.png" alt="poster" />
+                <img src="img/Frame 13.png" alt="Couleur" class="hover-img" />
+              </a>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="carousel-prev"></div>
+          <div class="carousel-next"></div>
+        </div>
+        <extends src="footer.html"></extends>
+      </div>
     </div>
   </div>
-</html>
+  <script src="js/main.js" type="module"></script>
+</body>

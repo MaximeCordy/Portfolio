@@ -32,3 +32,25 @@ triggers.forEach((trigger, index) => {
     videos[index].classList.add("is-active");
   });
 });
+
+import Swiper, { Navigation, Pagination } from "swiper";
+
+Swiper.use([Navigation, Pagination]);
+
+const swiper = new Swiper(".swiper-container", {
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  slidesPerView: 3,
+  spaceBetween: 30,
+});
+
+const mouse = document.querySelector("#mouse");
+window.addEventListener("mousemove", (e) => {
+  mouse.style.top = e.pageY + "px";
+  mouse.style.left = e.pageX + "px";
+});
