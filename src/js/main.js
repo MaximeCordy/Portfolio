@@ -5,21 +5,7 @@ const star = document.querySelector(".footer-logo-star .star");
 function changerVitesse(vitesse) {
   star.style.animationDuration = `${4}s`; // Vitesse en secondes
 }
-
-changerVitesse(4);
-
-// const video = document.getElementById("mainVideo");
-// const videoWorks = document.querySelectorAll(".video-work");
-
-// videoWorks.forEach((item) => {
-//   item.addEventListener("mouseover", function () {
-//     let videoId = this.id; // Utilisation de `id`
-//     let newVideo = videoId + ".mp4"; // Créez un chemin en fonction de l'id
-//     video.querySelector("source").setAttribute("src", newVideo);
-//     video.load();
-//     video.play();
-//   });
-// });
+if (star) changerVitesse(4);
 
 const triggers = document.querySelectorAll(".trigger");
 const videos = document.querySelectorAll(".videoo");
@@ -53,4 +39,28 @@ const mouse = document.querySelector("#mouse");
 window.addEventListener("mousemove", (e) => {
   mouse.style.top = e.pageY + "px";
   mouse.style.left = e.pageX + "px";
+});
+
+var swiper2 = new Swiper(".mySwiper", {
+  navigation: {
+    nextEl: ".swiper-button-next2",
+    prevEl: ".swiper-button-prev2",
+  },
+  pagination: {
+    el: ".swiper-pagination2",
+    clickable: true,
+  },
+  slidesPerView: 1,
+});
+
+var swiper2 = new Swiper(".mySwiper2", {
+  navigation: {
+    nextEl: ".swiper-button-next2",
+    prevEl: ".swiper-button-prev2",
+  },
+  pagination: {
+    el: ".swiper-pagination2",
+    clickable: true,
+  },
+  slidesPerView: 1,
 });

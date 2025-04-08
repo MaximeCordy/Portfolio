@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<body>
   <head>
     <meta charset="utf-8" />
     <title>eikon parcel starter</title>
@@ -13,13 +13,56 @@
       rel="preconnect"
       href="https://fonts.googleapis.com"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Island+Moments&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
+  <div id="mouse"></div>
   <extends src="header.html"></extends>
-  <h1>Poster</h1>
-  <a href="index.html">Acceuil</a>
-</html>
+  <div class="header_photo_content">
+    <h2>A MARK ON <span> THE WALLS</span></h2>
+  </div>
+  <div dir="rtl" class="swiper mySwiper2">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="img/poster1.1.png" alt="photo" />
+      </div>
+      <div class="swiper-slide"><img src="img/poster2.png" alt="photo" /></div>
+      <div class="swiper-slide"><img src="img/poster3.png" alt="photo" /></div>
+    </div>
+    <div class="swiper-button-next2"></div>
+    <div class="swiper-button-prev2"></div>
+    <div class="swiper-pagination2"></div>
+  </div>
+  <div class="text_video">
+    <div class="container">
+      <div class="row">
+        <div class="titre_video">
+          <div class="col-12 col-lg-3 offset-1">Poster</div>
+        </div>
+        <div class="col-12 col-lg-7 offset-4">
+          <div class="space_video_text">
+            My first paid project was a poster for a children's festival. I
+            enjoyed working on it so much that it became a passion. I really
+            enjoy making posters for my colleagues or friends; it helps me pass
+            the time and clear my mind. I could spend hours doing this on
+            Illustrator or Photoshop.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <extends src="footer.html"></extends>
+  <script src="js/main.js" type="module"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>

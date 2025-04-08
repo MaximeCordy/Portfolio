@@ -1,0 +1,64 @@
+.header_photo_content span {
+  color: #fff;
+  font-family: "Island Moments";
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 1%;
+  padding-right: 2%;
+}
+
+.header_photo_content h2 {
+  color: #fff;
+  font-family: Inter;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.header_photo_content {
+  display: flex;
+  text-wrap: nowrap;
+  justify-content: center;
+  margin-top: 13%;
+  margin-bottom: 8%;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 80%;
+  object-fit: cover;
+  margin-right: 10%;
+}
+
+.swiper-slide {
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.swiper-pagination2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2%;
+}
+.swiper-pagination2 .swiper-pagination-bullet {
+  background-color: white;
+  opacity: 0.5;
+  scale: 1.5;
+  margin: 0.5%;
+}
+
+.swiper-pagination2 .swiper-pagination-bullet-active {
+  background-color: #ff0505;
+  opacity: 1;
+}
