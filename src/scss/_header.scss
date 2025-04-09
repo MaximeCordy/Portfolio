@@ -8,12 +8,17 @@
   align-items: center;
   text-decoration: none;
   position: relative;
+  transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.header a:hover {
+  font-weight: 400;
 }
 .header-nav {
   display: flex;
   align-items: flex-end;
   gap: 49px;
 }
+
 .container-fluid {
   margin-top: 1%;
 }
